@@ -1,0 +1,93 @@
+
+:root {
+    --b-orange: hsl(31, 77%, 52%);
+    --d-cyan: hsl(184, 100%, 22%);
+    --vd-cyan: hsl(179, 100%, 13%);
+    --t-white: hsla(0, 0%, 100%, 0.75);
+    --vd-gray: hsl(0, 0%, 95%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+.wrapperpj1{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 5% 20%;
+}
+
+.wrapperpj1>div{
+    padding: 2em 3em;
+}
+.wrapperpj1 h1{
+    color: var(--vd-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+.wrapperpj1 p{
+    color: var(--t-white);
+    line-height: 1.6rem;
+    font-size: 0.9375rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.wrapperpj1 button{
+    margin-top: 5em;
+    background: var(--vd-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: .6em 2em;
+    border-radius: 5rem;
+    border: solid var(--vd-gray);
+}
+
+.wrapperpj1 button:hover{
+    background: inherit;
+    color: var(--vd-gray);
+}
+
+.rob{   
+    background: var(--b-orange);
+    border-radius: .5rem 0 0 .5rem;
+}
+.cob{
+    background: var(--d-cyan);
+}
+.bob{
+    background: var(--vd-cyan);
+    border-radius: 0 .5rem .5rem 0;
+}
+.rob button{
+    color: var(--b-orange);
+}
+.cob button{
+    color: var(--d-cyan);
+}
+.bob button{
+    color: var(--vd-cyan);
+}
+
+@media screen and (max-width:1108px){
+    .wrapperpj1{
+        grid-template-columns: 100%;
+    }
+    .rob{   
+        background: var(--b-orange);
+        border-radius: .5rem .5rem 0 0;
+    }
+    .bob{
+        background: var(--vd-cyan);
+        border-radius: 0 0 .5rem .5rem;
+    }
+    .wrapperpj1 button{
+        margin-top:1rem;
+    }
+}
+
+
